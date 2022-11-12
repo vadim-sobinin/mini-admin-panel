@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Mark",
+      "email": "otto@gmail.com",
+      "children": false,
+      "permission": true
+    },
+    {
+      "id": 2,
+      "name": "Jacob",
+      "email": "thornton@gmail.com",
+      "children": true,
+      "permission": false
+    },
+    {
+      "name": "Tom",
+      "email": "sad@ajsd",
+      "children": true,
+      "permission": false,
+      "id": 3
+    },
+    {
+      "name": "Ivan",
+      "email": "123@442",
+      "children": false,
+      "permission": false,
+      "id": 4
+    },
+    {
+      "name": "Jake",
+      "email": "JJH@sda",
+      "children": true,
+      "permission": false,
+      "id": 5
+    },
+    {
+      "name": "Ann",
+      "email": "12asd@asd",
+      "children": true,
+      "permission": false,
+      "id": 6
+    },
+    {
+      "name": "Mike",
+      "email": "mmike@asd",
+      "children": false,
+      "permission": false,
+      "id": 7
+    }
+  ]
+}
