@@ -2,9 +2,11 @@ export const render = (users) => {
   const tableBody = document.querySelector('#table-body');
   tableBody.innerHTML = '';
   users.forEach((user) => {
+    const userNumber = tableBody.childElementCount + 1;
     const userTable = document.createElement('tr');
+    userTable.setAttribute('id', user.id);
     userTable.innerHTML = `
-      <th scope="row">${user.id}</th>
+      <th scope="row">${userNumber}</th>
       <td>${user.name}</td>
       <td>${user.email}</td>
       <td>${user.children ? 'has' : 'has not'}</td>
@@ -23,7 +25,7 @@ export const render = (users) => {
           <button type="button" class="btn btn-warning">
             <i class="bi-pencil-square"></i>
           </button>
-          <button type="button" class="btn btn-danger">
+          <button type="button" class="btn btn-danger" id="remove-btn">
             <i class="bi-person-x"></i>
           </button>
         </div>

@@ -10,4 +10,9 @@ export class UserServices {
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
     }).then((res) => res.json);
   }
+  removeUser(id) {
+    return fetch(`http://localhost:4545/users/${id}`, {
+      method: 'DELETE',
+    }).then((res) => res.json);
+  }
 }
