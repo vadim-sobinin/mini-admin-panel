@@ -22,7 +22,7 @@ export const render = (users) => {
       </td>
       <td>
         <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-warning">
+          <button type="button" class="btn btn-warning" id="edit-btn">
             <i class="bi-pencil-square"></i>
           </button>
           <button type="button" class="btn btn-danger" id="remove-btn">
