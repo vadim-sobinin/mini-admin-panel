@@ -23,7 +23,7 @@ export const editUser = () => {
 
       formName.value = userData[1].textContent;
       formEmail.value = userData[2].textContent;
-      formChildren.checked = userData[3].textContent == 'has';
+      formChildren.checked = userData[3].textContent == 'YES';
 
       const saveBtn = form.querySelector('.btn-save');
       saveBtn.setAttribute('id', `save${id}`);

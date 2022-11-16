@@ -23,4 +23,12 @@ export class UserServices {
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
     }).then((res) => res.json);
   }
+
+  editPermission(id, data) {
+    return fetch(`http://localhost:4545/users/${id}`, {
+      method: 'PATCH',
+      body: JSON.stringify(data),
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    }).then((res) => res.json);
+  }
 }
