@@ -31,4 +31,8 @@ export class UserServices {
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
     }).then((res) => res.json);
   }
+
+  filterUsers(filterOpt) {
+    return fetch(`http://localhost:4545/users${filterOpt}`).then((res) => res.json());
+  }
 }
