@@ -35,4 +35,8 @@ export class UserServices {
   filterUsers(filterOpt) {
     return fetch(`http://localhost:4545/users${filterOpt}`).then((res) => res.json());
   }
+
+  sortUsers(sortOpt) {
+    return fetch(`http://localhost:4545/users${sortOpt}`).then((res) => res.json());
+  }
 }
