@@ -39,4 +39,8 @@ export class UserServices {
   sortUsers(sortOpt) {
     return fetch(`http://localhost:4545/users${sortOpt}`).then((res) => res.json());
   }
+
+  searchUsers(str) {
+    return fetch(`http://localhost:4545/users?name_like=${str}`).then((res) => res.json());
+  }
 }
